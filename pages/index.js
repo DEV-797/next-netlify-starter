@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app! Oke_Cuba" />
+        <Header title="This will be the Oke_Cuba oficial website. " />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
