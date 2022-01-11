@@ -2,12 +2,18 @@
     background-color: black;
     padding: 20px;
 }
-.nav-bar a{
+.nav-bar  a{
     color: white;
     margin: 10px  0px 10px 0px;
     padding: 15px;
     /* float: right; */
     text-decoration: none;
+}
+.nav-bar-buttons{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
 }
 
 .nav-bar a:hover{
@@ -16,26 +22,32 @@
     border-radius: 10px;
 }
 body{
- background-color: gainsboro;
+ background:rgba(0,0,0,0.05);
+ font-family: sans-serif;
 }
 .container{
-    width: 80%;
-    margin-left: 10%;
+    /* width: 80%;
+    margin-left: 10%; */
     background-color: ghostwhite;
 }
 .product_container{
     width: 80%;
     margin-left: 10%;
     background-color: ghostwhite;
-    height: 100vh;
+    height: 100%;
+    
 }
 
+.product_item{
+    margin: 5px;;
+}
 .product_item img{
-    width: 400px;
+    width: 350px;
     height: 200px;
+    border-radius: 10px;
 }
 
-.product_desc{    
+.product_desc{        
     opacity: 0%;
     background-color: green;
     margin-top: -200px;
@@ -64,3 +76,51 @@ body{
     margin-bottom: -50px;
     position: absolute;
 } */
+
+.card{
+ margin: 5px;
+ color: white;
+ background-image: url(..//public/products_imgs/1.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ padding: 5rem 0 0;
+ max-width: 35ch;
+ border-radius: 0.5rem;
+ overflow: hidden;
+ box-shadow:  5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.card-content{
+    --padding:1.5rem;
+   padding: var(--padding); 
+   background:rgba(0,0,0,0.2);
+}
+.card-title{
+    position: relative;
+    width: max-content;
+    /* outline: 1px solid red; */
+}
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding)*-1 );
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background:chartreuse;
+}
+
+.button{
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: chartreuse;
+    padding: .5em 1.25em;
+    border-radius: 0.25em;
+    border-style: none;
+}
+
+.button:hover, .card-button:focus{
+    background-color: whitesmoke;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
